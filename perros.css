@@ -1,0 +1,247 @@
+
+
+:root {
+    --primary-color: #f57c00; 
+    --dark-color: #1a0c01; 
+    --background-light: #ECE0CF; 
+    --text-color-dark: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 300;
+    line-height: 1.6;
+    background-color: var(--background-light);
+    color: var(--text-color-dark);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color-dark);
+    transition: color 0.2s linear; 
+}
+
+button, input, textarea {
+    cursor: pointer;
+}
+
+
+header {
+    background-color: var(--primary-color);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color-dark);
+    font-weight: 700;
+}
+
+header .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    padding: 5px 10px;
+    color: var(--dark-color);
+}
+
+.menu a:hover {
+    color: var(--hover-light);
+}
+
+.logo img {
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+
+
+.cta-container {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+    background-image: url('./perrrro.jpg'); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: sepia(30%);
+}
+
+.cta-content {
+    padding: 20px;
+    max-width: 600px;
+    color: var(--dark-color);
+    background-color: rgba(236, 224, 207, 0.5); 
+}
+
+.cta-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 8px 4px 6px var(--hover-light);
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.info-section {
+    padding: 50px 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; 
+
+.info-column {
+    flex: 1 1 300px; 
+}
+
+.info-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.info-column p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.info-column a {
+    color: var(--primary-color);
+    font-weight: 700;
+    transition: color 0.2s linear;
+}
+
+.info-column a:hover {
+    color: var(--hover-light);
+}
+
+.contact-form-container {
+    flex: 1 1 300px; 
+}
+
+.contact-form-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    outline: none;
+    transition: transform 0.25s ease;
+}
+input:hover, textarea:hover {
+    transform: scale(1.05); 
+    border-color: var(--primary-color);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.send-btn {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.2s linear;
+    align-self: flex-start; 
+}
+
+.send-btn:hover {
+    background-color: var(--hover-light);
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    padding: 0 5%;
+    text-align: center;
+}
+
+.footer-copy {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    padding: 10px 0;
+}
+
+.footer-copy h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+@media (max-width: 650px) {
+}
+    
+    .menu {
+        display: none;
+    }
+
+    header {
+        justify-content: flex-start;
+        gap: 15px;
+        position: relative;
+    }
+    
+    header .hamburger {
+        display: block;
+        order: 3;
+    }
+    .logo {
+        flex-grow: 1; 
+        text-align: center;
+    }
+
+    .cta-container {
+        height: 400px;
+        background-attachment: scroll; 
+    }
+
+    .cta-content h1 {
+        font-size: 2.5rem;
+    }
+    .info-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .info-column, .contact-form-container {
+        flex: 1 1 100%;
+    }
+}

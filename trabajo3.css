@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+header {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    border-bottom: 1px solid #dee2e6;
+}
+
+header .logo a {
+    font-size: 1.6em;
+    padding: 0 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+.menu li a {
+    font-size: 1.2em;
+    padding: 25px 10px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease, font-weight 0.3s ease;
+}
+
+.menu li:nth-child(1) a {
+    border-color: #007bff;
+}
+.menu li:nth-child(2) a {
+    border-color: #32cd32;
+}
+.menu li:nth-child(3) a {
+    border-color: #8a2be2;
+}
+.menu li:nth-child(4) a {
+    border-color: #ffd747;
+}
+
+.menu li a:hover {
+    border-bottom: 3px solid #007bff;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+.search i {
+    padding: 8px 10px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.cta-container {
+    background-color: #e9ecef;
+    padding: 110px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 700px;
+}
+
+.cta-content h1 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    max-width: 550px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.services-container {
+    background-color: #f1f3f5;
+    padding: 34px 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+}
+
+.service-item {
+    width: 30%;
+}
+
+.service-item i {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    margin-bottom: 10px;
+}
+
+.contact-container {
+    background-color: #f8f9fa;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.contact-container h2 {
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    background-color: #f1f3f5;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    outline: none;
+    font-size: 1em;
+    transition: border-bottom 0.3s ease, transform 0.25s ease;
+}
+
+.contact-form input:nth-child(1) {
+    border-bottom-color: #32cd32;
+}
+.contact-form input:nth-child(2) {
+    border-bottom-color: #8a2be2;
+}
+.contact-form textarea {
+    border-bottom-color: #ffd747;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form input:hover, .contact-form textarea:hover {
+    border-bottom-color: #007bff;
+    transform: scale(1.02);
+}
+
+.send-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+    background-color: #343a40;
+}
+
+footer {
+    background-color: #f1f3f5;
+    padding: 20px 5%;
+    text-align: center;
+}
+
+.footer-content h3, .footer-content small {
+    font-weight: bold;
+}
+
+footer a {
+    font-size: 2em;
+    margin-top: 10px;
+    display: block;
+    color: #343a40;
+}
+
+@media (max-width: 650px) {
+    
+    header {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+    
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 10px;
+    }
+
+    .menu li a {
+        padding: 15px 10px;
+        display: block;
+        text-align: center;
+    }
+    
+    .logo, .search {
+        order: -1;
+    }
+
+    .services-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .service-item {
+        width: 100%;
+    }
+    
+    .contact-form {
+        padding: 0;
+    }
+    
+    footer a {
+        font-size: 1.5em;
+    }
+}
