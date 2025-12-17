@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    background-color: rgb(165, 63, 224);
+    justify-content: space-around;
+}
+.nav_links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    }
+    .nav_links li a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    h1{
+        color: rgb(2, 10, 18);
+    }
+    .nav_links li a:hover{
+        box-shadow: 2px 1px 2px rgb(40, 42, 42);
+        color: black;
+   }
+   .dep{
+    display: flex;
+    align-items: center;
+   }
+   .mus{
+    display: flex;
+    align-items: center;
+   }
+   .mim{
+    display: flex;
+    align-items: center;
+   }
+   .car{
+    display: flex;
+    align-items: center;
+   }
+   .bus{
+    display: flex;
+    align-items: center;
+   }
+   .pie{
+    display: flex;
+    align-items: center;
+   }
+   .toggle_menu{
+    display: none;
+   }
+   .hamburguesa{
+    display: none;
+   }
+   #portadas{
+  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+ 
+   }
+   
+   .submenu1{
+    list-style: none;
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background-color: rgb(18, 10, 10);
+   
+}
+
+   .submenu:hover .submenu1{
+     display: block;
+
+
+   }
+   .seccion2{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(165, 63, 224);
+    margin-top: 1800px;
+    
+}
+.seccion3{
+width: 100%;
+height: 200px;
+background-color: rgb(165, 63, 224);
+margin-top: 2000px;
+}
+.acep{
+    background-color: rgb(165, 63, 224);
+    width: 40%;
+    color: rgb(255, 255, 255);
+}
+.login{
+width: 100%;
+height: 300px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+
+
+
+}
+.register{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+  
+ 
+}
+.regis{
+  
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  height: 1700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 30px;
+}
+input{
+    width: 40%;
+    height: 60px;
+  
+}
+#login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    width: 40%;
+    border-radius: 30px;
+    height: 280px;
+    background-color: rgb(251, 251, 251);
+    
+    
+  
+}
+body{
+    background-color: rgb(192, 188, 188);
+}
+
+   @media(max-width:768px){
+    .nav_links{
+        display: none;
+     }
+     .toggle_menu{
+        display: flex;
+        
+     }
+     .toggle_menu:checked ~ .nav_links{
+        display: flex;
+     }
+     .nav_links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 200px;
+        height: 205px;
+        background-color: rgb(165, 63, 224);
+   }
+
+}
