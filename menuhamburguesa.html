@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <label for="toggle" class="hamburguesa"></label>
+        <input type="checkbox" id="toggle" class="toggle_menu">
+        <h1>menu</h1>
+        <ul class="nav_links">
+            <li>
+                <a href="">home</a>
+
+            </li>
+            <li>
+                <a href="../../servicios.html">servicios</a>
+
+            </li>
+            <li>
+                <a href="" >nosotros</a>
+            </li>
+            <li>
+                <a href="#contacto">contactos</a>
+            </li>
+            <li class="submenu">
+                <a href="">Menu</a>
+                <ul class="submenu1">
+                    <li>
+                        <a>submenu 1</a>
+                    </li>
+                    <li>
+                        <a >submenu 2</a>
+                    </li>
+                    <li>
+                        <a href="#submenu3">submenu 3</a>
+                    </li>
+                </ul>
+            </li>
+           
+        </ul>
+    </nav>
+
+
+    <div id="portadas"> 
+        <div class="login">
+           
+            <form id="login">
+                 <h1>login</h1>
+                <label>email</label>
+                <input type="email" placeholder="Escriba su correo care monda" required>
+                <label >password</label>
+                <input type="password" placeholder="Escriba password"required>
+                <button type="submit" class="acep">Aceptar </button>
+            </form>
+        </div>
+        <div class="register">
+            <div class="regis">
+              <h1>registro</h1>
+              <div ></div>
+               <label for="name">name</label>
+                 <input type= "text" id="name" placeholder="Escriba su nombre" required>
+                 <label for="ape">apellido</label>
+                 <input id="ape" name="" type="text" placeholder="ingrese su apellido" required>
+                 <label>direccion</label>
+                 <input type="text" placeholder="escriba su direccion" required>
+                  <label>numero</label>
+                <input type="number" placeholder="escriba su numero" required>
+            
+
+            
+               
+               <div class="gen">
+                <label>genero:</label>
+            
+                 <select>
+                    <option value="" disable selected>seleccione......</option>
+                    <option value="F">femenino</option>
+                    <option value="M">masculino</option>
+                    <option value="o">otros</option>
+                 </select>
+               </div>
+
+
+                <label >pasatiempos:</label>
+                <div class="dep">
+                  <label>deportes</label>
+                  <input type="checkbox" value="Deporte" name="pasatiempo">
+                </div>
+                <div class="mus">
+                   <label>musica</label>
+                  <input type="checkbox" value="Musica" name="pasatiempo"> 
+                </div>
+                <div class="mim">
+
+                   <label>mimir</label>
+                   <input type="checkbox" value="nadita" name="pasatiempo">
+                </div>
+
+
+                <label>comentarios</label>
+                <textarea placeholder="traiganle una flda a la niña" rows="5" cols="10"></textarea>
+
+
+
+                <label>tipo transporte</label>
+                <div class="car">
+
+                  <input type="radio" value="carro" name="transporte">Carro</input>
+                </div>
+                <div class="bus">
+                  <input type="radio" value="bus" name="transporte">bus</input>
+                </div> 
+                <div class="pie">
+                  <input type="radio" value="a pata" name="transporte">a_pie</input>
+                </div> 
+        
+
+
+                 <label>email</label>
+                <input type="email" placeholder="escriba su correo" required>
+                <label >password</label>
+                <input type="password"placeholder="escriba la pasword" required>
+                <button type="submit">aceptar</button>
+            </div>
+              
+
+        </div>
+
+    </div>
+    <section class="seccion2" id="contacto">
+
+    </section>
+    <section class="seccion3" id="submenu3">
+        <h1></h1>
+
+    </section>
+    
+</body>
+</html>

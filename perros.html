@@ -1,70 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Dogs Lover</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dogs Lover | ¡El Mejor Amigo del Hombre!</title>
-    <meta name="description" content="Una web para amantes de los perros. Encuentra contenido, servicios y la alegría incondicional de los perritos. ¡Mucho mejor que los gatos!">
-    <meta name="keywords" content="perros, dog lover, mascotas, cachorros, solo perros">
+
+    <!-- SEO básico -->
+    <meta name="description" content="Dogs lover page about love, care and friendship with dogs">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="perros.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Blog perruno</a></li>
-                <li><a href="#">Contáctanos</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Galería</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <a href="#" aria-label="Logo de un perro. ¡El mejor amigo del hombre!"><img src="https://cdn-icons-png.flaticon.com/128/330/330048.png" width="36px" alt="Logo de perrito"></a>
-        </div>
-        <button class="hamburger" aria-label="Abrir menú">☰</button>
-    </header>
-
-    <div class="cta-container">
-        <div class="cta-content">
-            <h1>♥ Dogs lover</h1>
-            <p>Los perros, conocidos como los mejores amigos de la humanidad, nos ofrecen lealtad, alegría y compañía, enriqueciendo nuestras vidas con amor incondicional y diversión.</p>
-        </div>
+ <header>
+    <div class="logo">
+        <a href="#">
+            <img src="https://cdn-icons-png.flaticon.com/128/1351/1351861.png" alt="Dog logo">
+        </a>
+        <button class="hamburger" aria-label="Menu">☰</button>
     </div>
 
-    <main>
-        <section class="info-section">
-            <div class="info-column">
-                <h3>Perritos</h3>
-                <p>Los perros, conocidos como los mejores amigos de la humanidad, nos ofrecen lealtad, alegría y compañía, enriqueciendo nuestras vidas con amor incondicional y diversión.</p>
-                <p>Dogs, known as humanity's best friends, offer loyalty, joy, and companionship, enriching our lives with unconditional love and fun.</p>
-                <a href="#">Más perritos</a>
+    <nav>
+        <ul class="menu">
+            <div class="l">
+              <li><a href="#">Home</a></li>
             </div>
-            <div class="info-column">
-                <h3>Perritos</h3>
-                <p>Los perros, conocidos como los mejores amigos de la humanidad, nos ofrecen lealtad, alegría y compañía, enriqueciendo nuestras vidas con amor incondicional y diversión.</p>
-                <p>Dogs, known as humanity's best friends, offer loyalty, joy, and companionship, enriching our lives with unconditional love and fun.</p>
-                <a href="#">Más perritos</a>
+            <div class="l">
+              <li><a href="#">Blog</a></li>
             </div>
-            <div class="contact-form-container">
-                <h3>Contáctanos</h3>
-                <form>
-                    <input type="text" placeholder="Tu Nombre" id="name" name="name" required autofocus aria-label="Tu Nombre">
-                    <input type="email" placeholder="Tu Correo" id="email" name="email" required aria-label="Tu Correo">
-                    <textarea placeholder="Tu Mensaje..." id="message" name="message" aria-label="Tu Mensaje"></textarea>
-                    <button type="submit" class="send-btn">Enviar</button>
-                </form>
+            <div class="l">
+              <li><a href="#">Contact</a></li>
             </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="footer-copy">
-            <h3>SOLO PERROS</h3>
-            <small>&copy; 2000 – 2024</small>
+            <div class="l">
+              <li><a href="#">About us</a></li>
+            </div>
+            <div class="l">
+              <li><a href="#">Gallery</a></li>
+            </div> 
+        </ul>  
+    </nav>
+ </header>
+
+
+<div class="cta-container">
+    <h1>♥ Dog lover</h1>
+    <p>
+        Dogs, known as humanity's best friends, offer loyalty, joy, and companionship,
+        enriching our lives with unconditional love and fun.
+    </p>
+</div>
+
+<div class="footer-copy">
+    <h3>ONLY DOGS</h3>
+    <small>&copy; 2000 – 2024</small>
+</div>
+
+<footer>
+    <div class="footer-menu">
+
+        <div>
+            <h3>Dogs</h3>
+            <p>Dogs bring happiness and loyalty to families around the world.</p>
+            <p>They enrich our lives with love and unforgettable moments.</p>
+            <a href="#">More dogs</a>
         </div>
-    </footer>
+
+        <div>
+            <h3>Dogs</h3>
+            <p>Dogs bring happiness and loyalty to families around the world.</p>
+            <p>They enrich our lives with love and unforgettable moments.</p>
+            <a href="#">More dogs</a>
+        </div>
+
+        <div class="contact-container">
+            <h3>Contact with us</h3>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Name" required autofocus>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message..." rows="6" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+    </div>
+</footer>
+
 </body>
 </html>
